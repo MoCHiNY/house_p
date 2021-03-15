@@ -1,0 +1,39 @@
+.about {
+  &__wrapper {
+    display: flex;
+  }
+
+  &__bg {
+    max-width: 1060px;
+    min-height: 740px;
+    object-fit: cover;
+    margin-right: 80px;
+  }
+
+  &__info {
+    margin-top: 60px;
+    max-width: 480px;
+  }
+
+  &__title {
+    font-size: 50px;
+    @include avenirnextcyr-700;
+    margin-bottom: 50px;
+  }
+
+  &__subtitle {
+    font-size: 35px;
+    @include avenirnextcyr-500;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    max-width: 440px;
+    color: $grey;
+    @include avenirnextcyr-500;
+
+    & p:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+}

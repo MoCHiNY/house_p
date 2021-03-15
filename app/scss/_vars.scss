@@ -1,3 +1,39 @@
+$grey: #9b9b9b;
+$blue: #3c6b97;
+$grey97: #f7f7f7;
+
+
+@mixin menu-efect {
+  transition: all 0.5s ease-in;
+
+  &:hover {
+    font-weight: 700;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $blue;
+    }
+  }
+
+  &:focus {
+    font-weight: 700;
+    color: $blue;
+  }
+}
+
+@mixin before {
+  content: '';
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @mixin avenirnextcyr-700 {
   font-family: 'avenirnextcyr',
     sans-serif;

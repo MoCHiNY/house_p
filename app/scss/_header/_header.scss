@@ -1,0 +1,108 @@
+.header {
+  min-height: 95px;
+  display: flex;
+  align-items: center;
+  background-color: $grey97;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu {
+    margin-left: 70px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__menu-link {
+    position: relative;
+    font-size: 15px;
+    padding: 0 5px;
+    @include menu-efect;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--page {
+      max-width: 340px;
+      width: 100%;
+      margin-left: auto;
+    }
+  }
+
+  &__cart-link {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  &__cart-num {
+    position: absolute;
+    top: -5px;
+    left: 75%;
+    width: 17px;
+    height: 17px;
+    font-size: 12px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: $blue;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.social {
+  display: flex;
+
+  &__inner {
+    align-self: center;
+    margin-right: 50px;
+  }
+
+  &__link-tel:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  &--footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 60px;
+
+    .social__inner {
+      margin: 0;
+    }
+
+    .social__list {
+      margin-bottom: 18px;
+    }
+
+    .social__link-tel {
+      display: block;
+      color: #ffffff;
+      margin: 0;
+    }
+  }
+}
