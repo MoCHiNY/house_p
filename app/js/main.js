@@ -4,7 +4,7 @@ $(function () {
     arrows: false,
     focusOnSelect: true,
     draggable: false,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     vertical: true,
   });

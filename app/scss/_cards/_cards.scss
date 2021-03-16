@@ -24,11 +24,11 @@
     margin-bottom: 33px;
     background-color: $grey97;
   }
+}
 
-  &__descr {
-    text-align: center;
-    font-size: 15px;
-  }
+.card-descr {
+  text-align: center;
+  font-size: 15px;
 
   &__title {
     @include avenirnextcyr-400;
@@ -45,7 +45,29 @@
     @include avenirnextcyr-500;
     font-size: 20px;
   }
+
+  &--product {
+    margin-bottom: 20px;
+
+    .card-descr__title {
+      font-size: 50px;
+    }
+
+    .card-descr__text {
+      font-size: 20px;
+    }
+
+    .card-descr__product {
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+
+    .card-descr__price {
+      font-size: 50px;
+    }
+  }
 }
+
 
 
 .pagination {
