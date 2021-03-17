@@ -1,0 +1,168 @@
+.product {
+  padding: 60px 0 80px;
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  &__inner {
+    display: flex;
+    margin-right: 128px;
+  }
+
+  &__slider-wrapper {
+    width: 155px;
+    margin-right: 60px;
+  }
+
+  &__small-slider {
+
+    .slick-slide {
+      opacity: 0.5;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  }
+
+  &__box-small {
+    width: 155px;
+    height: 155px;
+  }
+
+  &__img-small {
+    width: 155px;
+    height: 155px;
+  }
+
+  &__slider-inner {
+    max-width: 667px;
+  }
+
+  &__img-big {
+    max-width: 667px;
+    height: 667px;
+  }
+
+  &__info {
+    max-width: 380px;
+    width: 100%;
+  }
+
+  &__sprite {
+    display: flex;
+    margin-bottom: 27px;
+  }
+
+  &__sprite-img {
+    width: 39px;
+    height: 37px;
+
+    &:not(:last-child) {
+      margin-right: 11px;
+    }
+  }
+
+  &__list {
+    font-size: 15px;
+    color: #9b9b9b;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      @include before;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 0 6px 6px;
+      border-color: transparent transparent transparent $blue;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__more-title {
+    @include avenirnextcyr-400;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 73px;
+  }
+}
+
+.product-form {
+  font-size: 20px;
+
+  &__btn {
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: $blue;
+    padding: 8px 48px 8px 9px;
+    border: none;
+    cursor: pointer;
+    outline: transparent;
+
+    &::after {
+      width: 26px;
+      height: 22px;
+      right: 10px;
+      @include before;
+      background-image: url('../images/social/shopping-cart.svg');
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  &__new-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 109px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  &__input {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    &:checked+.product-form__new-checkbox {
+      background-color: $blue;
+      color: #ffffff;
+    }
+  }
+
+  &__range {
+    width: 109px;
+    height: 40px;
+  }
+}

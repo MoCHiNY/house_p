@@ -16,4 +16,13 @@ $(function () {
     fade: true,
   });
 
+  $('.product__more-slider').slick({
+    arrows: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000
+  });
+
 });

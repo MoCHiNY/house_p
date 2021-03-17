@@ -1,0 +1,15 @@
+.deliver {
+
+  transform: translateY(60px);
+
+  &__inner {
+    height: 106px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    opacity: 0.5;
+  }
+}

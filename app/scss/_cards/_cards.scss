@@ -7,6 +7,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+.card {
 
   &__item {
     max-width: 385px;
@@ -17,14 +20,23 @@
   }
 
   &__img {
-    max-height: 385px;
+    height: 385px;
     max-width: 385px;
     width: 100%;
     object-fit: cover;
     margin-bottom: 33px;
     background-color: $grey97;
+
+    &--small {
+      height: 370px;
+    }
+  }
+
+  &--product {
+    max-width: 370px;
   }
 }
+
 
 .card-descr {
   text-align: center;
@@ -47,6 +59,7 @@
   }
 
   &--product {
+    text-align: left;
     margin-bottom: 20px;
 
     .card-descr__title {
@@ -67,8 +80,6 @@
     }
   }
 }
-
-
 
 .pagination {
   display: flex;
