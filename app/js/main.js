@@ -25,4 +25,10 @@ $(function () {
     autoplaySpeed: 3000
   });
 
+$(function () {
+
+  $('.product-form__range').styler();
+
+});
+
 });
