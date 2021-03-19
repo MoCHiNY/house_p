@@ -29,7 +29,9 @@
   &__menu-link {
     position: relative;
     font-size: 15px;
-    padding: 0 5px;
+    padding: 0 5px 4px;
+    border-bottom: 4px solid transparent;
+    border-radius: 2px;
     @include menu-efect;
   }
 
@@ -73,8 +75,16 @@
     margin-right: 50px;
   }
 
-  &__link-tel:not(:last-child) {
-    margin-right: 50px;
+  &__link-tel {
+    transition: color 0.5s;
+
+    &:hover {
+      color: orangered;
+    }
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 
   &__list {
@@ -103,6 +113,11 @@
       display: block;
       color: #ffffff;
       margin: 0;
+      transition: color 0.5s;
+
+      &:hover {
+        color: orangered;
+      }
     }
   }
 }

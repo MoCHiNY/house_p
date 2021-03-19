@@ -8,22 +8,13 @@ $grey97: #f7f7f7;
 
   &:hover {
     font-weight: 700;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: $blue;
-    }
+    border-bottom: 4px solid $blue;
   }
 
   &:focus {
     font-weight: 700;
     color: $blue;
+    border-bottom: 4px solid $blue;
   }
 }
 
@@ -33,6 +24,7 @@ $grey97: #f7f7f7;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 
 @mixin avenirnextcyr-700 {
   font-family: 'avenirnextcyr',

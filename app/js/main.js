@@ -8,6 +8,7 @@ $(function () {
     slidesToScroll: 1,
     vertical: true,
   });
+  
   $('.product__big-slider').slick({
     asNavFor: '.product__small-slider',
     arrows: false,
@@ -25,10 +26,38 @@ $(function () {
     autoplaySpeed: 3000
   });
 
-$(function () {
-
-  $('.product-form__range').styler();
+  $(function () {
+    $('.product-form__range').styler();
+  });
 
 });
 
+const accord = document.querySelectorAll('[data-name="accordeon-title"]');
+
+accord.forEach(function (item) {
+  item.addEventListener('click', function () {
+    this.nextElementSibling.classList.toggle('accordeon-body');
+    this.classList.toggle('accordeon-active');
+  });
+});
+
+
+const butnOpen = document.querySelector('[data-btn="open"]');
+const modal = document.querySelector('[data-modal="modal"]');
+const btnClouse = document.querySelector('[data-btn="modal-clouse"]');
+
+butnOpen.addEventListener('click', function () {
+  modal.classList.remove('hidden');
+});
+
+btnClouse.addEventListener('click', function () {
+  modal.classList.add('hidden');
+});
+
+modal.addEventListener('click', function () {
+  modal.classList.add('hidden');
+});
+
+modal.querySelector('[data-modal="modal-window"]').addEventListener('click', function (even) {
+  even.stopPropagation();
 });

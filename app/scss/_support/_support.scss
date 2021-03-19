@@ -1,0 +1,78 @@
+.support {
+  padding: 32px 0 45px 0;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__info {
+    max-width: 310px;
+    width: 100%;
+    margin-right: 54px;
+  }
+
+  &__title {
+    font-size: 30px;
+    @include avenirnextcyr-700;
+    margin-bottom: 27px;
+  }
+
+  &__inner {
+    color: $grey;
+    @include avenirnextcyr-500;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  &__contact {
+    margin-bottom: 50px;
+  }
+
+  &__email {
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    display: block;
+    padding: 5px 0;
+    transition: color 0.5s;
+
+    &:hover {
+      color: orangered;
+    }
+  }
+
+  &__img {
+    max-width: 215px;
+    min-height: 360px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  &__question {
+    padding-left: 10px;
+    color: $grey;
+    @include avenirnextcyr-500;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__answer {
+    margin: 10px 0;
+    padding: 22px 15px 27px 25px;
+    background-color: $grey97;
+  }
+
+  .accordeon-body {
+    display: none;
+  }
+
+  .accordeon-active {
+    @include avenirnextcyr-700;
+    color: #81b5d1;
+  }
+}
