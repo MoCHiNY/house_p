@@ -43,3 +43,39 @@ $grey97: #f7f7f7;
     sans-serif;
   font-weight: 400;
 }
+
+@mixin _1420 {
+  @media (max-width: 1420px) {
+    @content;
+  }
+}
+@mixin _1250 {
+  @media (max-width: 1250px) {
+    @content;
+  }
+}
+
+@mixin _992 {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin _680 {
+  @media (max-width: 680px) {
+    @content;
+  }
+}
+
+@mixin _458 {
+  @media (max-width: 458px) {
+    @content;
+  }
+}
+
+@mixin _993 {
+  @media (min-width: 993px) {
+    @content;
+  }
+}
+

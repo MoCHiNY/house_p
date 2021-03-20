@@ -2,15 +2,32 @@
   min-height: 283px;
   background-color: $blue;
 
+  @include _680 {
+    min-height: auto;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
     color: #ffffff;
+
+    @include _680 {
+      padding: 20px 0;
+    }
+
+    @include _458 {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 
   &__inner {
     display: flex;
+
+    @include _680 {
+      flex-direction: column;
+    }
   }
 
   &__list {
@@ -19,6 +36,20 @@
 
     &:first-child {
       margin-right: 120px;
+
+      @include _680 {
+        margin: 0 0 30px 0;
+      }
+
+      @include _458 {
+        margin: 0;
+      }
+    }
+
+    &:last-child {
+      @include _458 {
+        display: none;
+      }
     }
 
     &.footer__list--page {
@@ -30,5 +61,9 @@
 
   &__item:not(:last-child) {
     margin-bottom: 20px;
+
+    @include _680 {
+      margin-bottom: 10px;
+    }
   }
 }

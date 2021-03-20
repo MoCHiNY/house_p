@@ -18,6 +18,9 @@
             <img class="header__logo-img" src="images/logo.png" alt="Логотип">
           </a>
           <nav class="header__menu">
+            <button class="burger-menu" type="button">
+              <span class="burger-menu__btn"></span>
+            </button>
             <ul class="header__list">
               <li class="header__item">
                 <a class="header__menu-link" href="#">Про нас</a>
@@ -180,60 +183,6 @@
                 <input class="product-form__range" type="number" name="radge" value="2" min="1">
               </div>
             </form>
-
-            <div class="modal hidden" data-modal="modal">
-              <div class="modal__wrapper">
-                <div class="modal__window" data-modal="modal-window">
-                  <div class="modal__clous-box">
-                    <div class="modal__cart">
-                      <img class="modal__img" src="images/modal/modal_cart.png" alt="зображення візка з товаром">
-                      Товар додано до кошику
-                    </div>
-                    <a class="modal__link" data-btn="modal-clouse" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px"
-                        height="17px" viewBox="0 0 17 17">
-                        <path fill-rule="evenodd" fill="#b7b7b7"
-                          d="M2.27063,1.0192108 C2.27063,1.0192108 15.984131,14.732788 15.984131,14.732788 C15.984131,14.732788 14.737427,15.979523 14.737427,15.979523 C14.737427,15.979523 1.0239258,2.2659454 1.0239258,2.2659454 C1.0239258,2.2659454 2.27063,1.0192108 2.27063,1.0192108 ZM14.737427,1.0192108 C14.737427,1.0192108 15.984131,2.2659454 15.984131,2.2659454 C15.984131,2.2659454 2.27063,15.979523 2.27063,15.979523 C2.27063,15.979523 1.0239258,14.732788 1.0239258,14.732788 C1.0239258,14.732788 14.737427,1.0192108 14.737427,1.0192108 Z" />
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="card card--modal">
-                    <div class="card__box">
-                      <a class="card__bin" href="#">
-                        <img class="card__icon" src="images/modal/bin.png" alt="бак для сміття">
-                      </a>
-                      <img class="card__img" src="images/cards/socks-1.png" alt="зображення шкарпеток для продажу">
-                    </div>
-                    <div class="card-descr">
-                      <h4 class="card-descr__title">
-                        Assorted box
-                      </h4>
-                      <p class="card-descr__text">
-                        6 пар в наборі
-                      </p>
-                      <input class="product-form__input" type="checkbox" name="checkbox">
-                      <span class="product-form__new-checkbox">M (39-42)</span>
-                      <input class="product-form__range" type="number" name="radge" value="2" min="1">
-                      <div class="card__price-box">
-                        <span>Всього:</span>
-                        <span class="card-descr__price">
-                          399 грн
-                        </span>
-                      </div>
-                    </div>
-                    <form class="card__form">
-                      <a class="card__form-btn" href="#">
-                        Шукати далі
-                      </a>
-                      <button class="card__form-btn card__form-btn--submit" type="submit">
-                        Оформити
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div class="product__sprite">
               <img class="product__sprite-img" src="images/sprite/spr_1.png" alt="емблема">
               <img class="product__sprite-img" src="images/sprite/spr_2.png" alt="емблема">
@@ -394,12 +343,64 @@
             </a>
           </div>
         </div>
+        <div class="modal hidden" data-modal="modal">
+          <div class="modal__wrapper">
+            <div class="modal__window" data-modal="modal-window">
+              <div class="modal__clous-box">
+                <div class="modal__cart">
+                  <img class="modal__img" src="images/modal/modal_cart.png" alt="зображення візка з товаром">
+                  Товар додано до кошику
+                </div>
+                <a class="modal__link" data-btn="modal-clouse" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px"
+                    height="17px" viewBox="0 0 17 17">
+                    <path fill-rule="evenodd" fill="#b7b7b7"
+                      d="M2.27063,1.0192108 C2.27063,1.0192108 15.984131,14.732788 15.984131,14.732788 C15.984131,14.732788 14.737427,15.979523 14.737427,15.979523 C14.737427,15.979523 1.0239258,2.2659454 1.0239258,2.2659454 C1.0239258,2.2659454 2.27063,1.0192108 2.27063,1.0192108 ZM14.737427,1.0192108 C14.737427,1.0192108 15.984131,2.2659454 15.984131,2.2659454 C15.984131,2.2659454 2.27063,15.979523 2.27063,15.979523 C2.27063,15.979523 1.0239258,14.732788 1.0239258,14.732788 C1.0239258,14.732788 14.737427,1.0192108 14.737427,1.0192108 Z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="card card--modal">
+                <div class="card__box">
+                  <a class="card__bin" href="#">
+                    <img class="card__icon" src="images/modal/bin.png" alt="бак для сміття">
+                  </a>
+                  <img class="card__img" src="images/cards/socks-1.png" alt="зображення шкарпеток для продажу">
+                </div>
+                <div class="card-descr">
+                  <h4 class="card-descr__title">
+                    Assorted box
+                  </h4>
+                  <p class="card-descr__text">
+                    6 пар в наборі
+                  </p>
+                  <input class="product-form__input" type="checkbox" name="checkbox">
+                  <span class="product-form__new-checkbox">M (39-42)</span>
+                  <input class="product-form__range" type="number" name="radge" value="2" min="1">
+                  <div class="card__price-box">
+                    <span>Всього:</span>
+                    <span class="card-descr__price">
+                      399 грн
+                    </span>
+                  </div>
+                </div>
+                <form class="card__form">
+                  <a class="card__form-btn" href="#">
+                    Шукати далі
+                  </a>
+                  <button class="card__form-btn card__form-btn--submit" type="submit">
+                    Оформити
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer"> 
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__inner">
@@ -499,7 +500,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> 
 
   <script src="js/main.min.js"></script>
 </body>

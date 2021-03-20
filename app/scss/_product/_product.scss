@@ -1,22 +1,60 @@
 .product {
   padding: 60px 0 80px;
 
+  @include _1250 {
+    position: relative;
+  }
+
+  @include _680 {
+    padding: 30px 0 30px;
+  }
+
   &__wrapper {
     display: flex;
     margin-bottom: 80px;
+
+    @include _1250 {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
   }
 
   &__inner {
     display: flex;
     margin-right: 128px;
+
+    @include _1420 {
+      margin-right: 20px;
+    }
+
+    @include _680 {
+      width: calc(280px + (650 - 400) * ((100vw - 320px) / (680 - 320)));
+      flex-direction: column-reverse;
+      align-items: center;
+      margin: 0 0 30px 0;
+    }
   }
 
   &__slider-wrapper {
     width: 155px;
     margin-right: 60px;
+
+    @include _1420 {
+      margin-right: 20px;
+    }
+
+    @include _680 {
+      max-width: 650px;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 
   &__small-slider {
+    @include _680 {
+      max-width: 680px;
+    }
 
     .slick-slide {
       opacity: 0.5;
@@ -44,11 +82,26 @@
 
   &__slider-inner {
     max-width: 667px;
+
+    @include _680 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__big-slider {
+    @include _1420 {
+      max-width: calc(300px + (667 - 367) * ((100vw - 320px) / (1420 - 320)));
+    }
   }
 
   &__img-big {
     max-width: 667px;
     height: 667px;
+
+    @include _1420 {
+      height: calc(280px + (667 - 387) * ((100vw - 320px) / (1420 - 320)));
+      margin: 0 auto;
+    }
   }
 
   &__info {
@@ -59,6 +112,10 @@
   &__sprite {
     display: flex;
     margin-bottom: 27px;
+
+    @include _458 {
+      justify-content: center;
+    }
   }
 
   &__sprite-img {
@@ -96,12 +153,29 @@
     }
   }
 
+  &__more-slider {
+    @include _680 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .slick-slide {
+      @include _680 {
+        text-align: center;
+      }
+    }
+  }
+
   &__more-title {
     @include avenirnextcyr-400;
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 73px;
+
+    @include _680 {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -138,6 +212,7 @@
   &__checkbox {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 24px;
   }
 
@@ -145,6 +220,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+
+    @include _458 {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 
   &__new-checkbox {
@@ -154,6 +234,11 @@
     width: 109px;
     height: 40px;
     cursor: pointer;
+
+    @include _458 {
+      width: 85px;
+      font-size: 16px;
+    }
   }
 
   &__input {
@@ -172,6 +257,10 @@
   &__range {
     width: 110px;
     height: 40px;
+
+    @include _458 {
+      margin-bottom: 20px;
+    }
 
     .jq-number {
       width: 110px;

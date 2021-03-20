@@ -10,8 +10,12 @@
   &__wrapper {
     width: 100%;
     position: relative;
-    top: calc(100vh - 70%);
+    top: 25%;
 
+    @include _1250 {
+      width: auto;
+      margin: 0 10px;
+    }
   }
 
   &__window {
@@ -21,23 +25,38 @@
     padding: 13px 14px 70px 35px;
     background-color: #fff;
     opacity: 1;
+
+    @include _992 {
+      padding: 10px;
+    }
   }
 
   &__clous-box {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+
+    @include _992 {
+      margin-bottom: 20px;
+    }
   }
 
   &__cart {
     margin-top: 28px;
+
+    @include _992 {
+      margin: 0;
+    }
+
+    @include _458 {
+      font-size: 0;
+    }
   }
 
   &__img {
     display: inline;
     margin-right: 10px;
   }
-
 }
 
 .hidden {
