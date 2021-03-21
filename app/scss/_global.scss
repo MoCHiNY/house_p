@@ -55,3 +55,9 @@ body {
     }
   }
 }
+
+#menu-active {
+  font-weight: 700;
+  color: $blue;
+  border-bottom: 4px solid $blue;
+}
