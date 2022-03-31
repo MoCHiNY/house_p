@@ -1,107 +1,90 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>progect | Rollo wolf</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <title>SCHLEGEL GRUPPE</title>
 </head>
 
 <body>
-
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <div class="header__inner">
-          <a class="logo" href="#">
-            <img class="header__logo-img" src="images/logo.png" alt="Логотип">
-          </a>
-          <nav class="header__menu">
+        <a class="logo" href="/">
+          <picture class="logo-picture">
+            <source srcset="images/logos/SCHLEGEL_GRUPPE_white.svg" media="(max-width: 768px)">
+            <img class="logo-picture__img" src="images/logos/SCHLEGEL_GRUPPE_blue.svg" alt="logo">
+          </picture>
+        </a>
+        <div class="header__flex">
+
+          <nav class="menu">
             <button class="burger-menu" type="button">
               <span class="burger-menu__btn"></span>
             </button>
-            <ul class="header__list">
-              <li class="header__item">
-                <a class="header__menu-link" id="menu-active"
-                  href="http://localhost:3000/">Про нас</a>
+            <button class="burger-clous" type="button">
+              <span class="burger-clous__btn"></span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="https://u-connect.pro/test/home-page.html">schlegelgruppe</a>
               </li>
-              <li class="header__item">
-                <a class="header__menu-link" href="http://localhost:3000/cards.html">Каталог</a>
+              <li class="menu__item">
+                <a class="menu__link"
+                  href="https://u-connect.pro/test/bahninnenausbau.html">bahninnenausbau</a>
               </li>
-              <li class="header__item">
-                <a class="header__menu-link" href="http://localhost:3000/product.html">FAQ</a>
+              <li class="menu__item">
+                <a class="menu__link " href="https://u-connect.pro/test/services.html">blechbearbeitung</a>
               </li>
-              <li class="header__item">
-                <a class="header__menu-link" href="http://localhost:3000/support.html">Контакти</a>
+              <li class="menu__item">
+                <a class="menu__link" href="https://u-connect.pro/test/technologies.html">technologien</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="https://u-connect.pro/test/form-send.html">auftragscenter</a>
               </li>
             </ul>
           </nav>
-        </div>
-        <div class="header__box">
-          <div class="social">
-            <div class="social__inner">
-              <a class="social__link-tel" href="tel:+380955555555">
-                +38(095)-555-55-55
-              </a>
-              <a class="social__link-tel" href="tel:+380969666666">
-                +38(096)-966-66-66
-              </a>
+          <div class="header-info">
+            <div class="header-info__inner">
+              <a class="header-info__link" href="https://u-connect.pro/test/about.html">wir über uns</a>
             </div>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link icon" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
-                    height="20px" viewBox="0 0 20 20" version="1.1">
-                    <g id="surface1">
-                      <path fill="#ffffff"
-                        d="M 14.191406 0 L 5.808594 0 C 2.605469 0 0 2.605469 0 5.808594 L 0 14.191406 C 0 17.394531 2.605469 20 5.808594 20 L 14.191406 20 C 17.394531 20 20 17.394531 20 14.191406 L 20 5.808594 C 20 2.605469 17.394531 0 14.191406 0 Z M 18.4375 14.191406 C 18.4375 16.53125 16.53125 18.4375 14.191406 18.4375 L 5.808594 18.4375 C 3.46875 18.4375 1.5625 16.53125 1.5625 14.191406 L 1.5625 5.808594 C 1.5625 3.46875 3.46875 1.5625 5.808594 1.5625 L 14.191406 1.5625 C 16.53125 1.5625 18.4375 3.46875 18.4375 5.808594 Z M 18.4375 14.191406 " />
-                      <path fill="#ffffff"
-                        d="M 10 4.609375 C 7.027344 4.609375 4.609375 7.027344 4.609375 10 C 4.609375 12.972656 7.027344 15.390625 10 15.390625 C 12.972656 15.390625 15.390625 12.972656 15.390625 10 C 15.390625 7.027344 12.972656 4.609375 10 4.609375 Z M 10 13.828125 C 7.890625 13.828125 6.171875 12.109375 6.171875 10 C 6.171875 7.890625 7.890625 6.171875 10 6.171875 C 12.109375 6.171875 13.828125 7.890625 13.828125 10 C 13.828125 12.109375 12.109375 13.828125 10 13.828125 Z M 10 13.828125 " />
-                      <path fill="#ffffff"
-                        d="M 16.25 4.53125 C 16.25 4.960938 15.898438 5.3125 15.46875 5.3125 C 15.039062 5.3125 14.6875 4.960938 14.6875 4.53125 C 14.6875 4.101562 15.039062 3.75 15.46875 3.75 C 15.898438 3.75 16.25 4.101562 16.25 4.53125 Z M 16.25 4.53125 " />
-                    </g>
-                  </svg>
-                </a>
+            <div class="header-info__inner">
+              <a class="header-info__link" href="https://u-connect.pro/test/news.html">news</a>
+            </div>
+            <div class="switch-language">
+              <p class="lang">DEU</p>
+              <div class="menu-language-container">
+                <ul id="menu-language" class="menu select">
+                  <li id="menu-item-15163"
+                    class="site-id-1 mlp-language-nav-item menu-item menu-item-type-mlp_language menu-item-object-mlp_language menu-item-15163">
+                    <a rel="alternate" href="#">ENG</a>
+                  </li>
+                  <li id="menu-item-15164"
+                    class="site-id-6 mlp-language-nav-item menu-item menu-item-type-mlp_language menu-item-object-mlp_language mlp-current-language-item menu-item-15164">
+                    <a rel="alternate" href="#">DEU</a>
+                  </li>
+                  <li id="menu-item-15165"
+                    class="site-id-7 mlp-language-nav-item menu-item menu-item-type-mlp_language menu-item-object-mlp_language menu-item-15165">
+                    <a rel="alternate" href="#">POL</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class="mobi-lang">
+              <li class="mobi-lang__item">
+                <a class="mobi-lang__link mobi-lang__link--active" href="/">deu</a>
               </li>
-              <li class="social__item">
-                <a class="social__link icon" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px"
-                    height="40px" viewBox="0 0 20 20">
-                    <g id="surface1">
-                      <path fill="white"
-                        d="M 15.234375 8.070312 C 15.234375 7.230469 14.554688 6.550781 13.714844 6.550781 L 6.597656 6.550781 C 5.761719 6.550781 5.082031 7.230469 5.082031 8.070312 L 5.082031 12.140625 C 5.082031 12.980469 5.761719 13.65625 6.597656 13.65625 L 13.714844 13.65625 C 14.554688 13.65625 15.234375 12.976562 15.234375 12.140625 Z M 9.140625 11.820312 L 9.140625 8 L 12.042969 9.910156 Z M 9.140625 11.820312 " />
-                    </g>
-                  </svg>
-                </a>
+              <li class="mobi-lang__item">
+                <a class="mobi-lang__link" href="/">eng</a>
               </li>
-              <li class="social__item">
-                <a class="social__link icon" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
-                    height="20px" viewBox="0 0 20 20" version="1.1">
-                    <g id="surface1">
-                      <path fill="#ffffff"
-                        d="M 11.550781 20 L 11.550781 10.878906 L 14.609375 10.878906 L 15.070312 7.320312 L 11.550781 7.320312 L 11.550781 5.050781 C 11.550781 4.023438 11.832031 3.320312 13.3125 3.320312 L 15.191406 3.320312 L 15.191406 0.140625 C 14.867188 0.0976562 13.75 0 12.449219 0 C 9.734375 0 7.878906 1.65625 7.878906 4.699219 L 7.878906 7.320312 L 4.808594 7.320312 L 4.808594 10.878906 L 7.878906 10.878906 L 7.878906 20 Z M 11.550781 20 " />
-                    </g>
-                  </svg>
-                </a>
+              <li class="mobi-lang__item">
+                <a class="mobi-lang__link" href="/">pol</a>
               </li>
             </ul>
           </div>
-          <a class="header__cart-link icon" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
-              height="20px" viewBox="0 0 20 20">
-              <g id="surface1">
-                <path fill="#ffffff"
-                  d="M 6.445312 12.929688 L 17.070312 12.929688 C 17.332031 12.929688 17.5625 12.757812 17.632812 12.503906 L 19.976562 4.300781 C 20.027344 4.125 19.992188 3.933594 19.882812 3.789062 C 19.769531 3.640625 19.597656 3.554688 19.414062 3.554688 L 5.09375 3.554688 L 4.671875 1.667969 C 4.613281 1.402344 4.375 1.210938 4.101562 1.210938 L 0.585938 1.210938 C 0.261719 1.210938 0 1.472656 0 1.796875 C 0 2.121094 0.261719 2.382812 0.585938 2.382812 L 3.632812 2.382812 C 3.707031 2.71875 5.636719 11.402344 5.746094 11.902344 C 5.125 12.171875 4.6875 12.792969 4.6875 13.515625 C 4.6875 14.484375 5.476562 15.273438 6.445312 15.273438 L 17.070312 15.273438 C 17.394531 15.273438 17.65625 15.011719 17.65625 14.6875 C 17.65625 14.363281 17.394531 14.101562 17.070312 14.101562 L 6.445312 14.101562 C 6.121094 14.101562 5.859375 13.839844 5.859375 13.515625 C 5.859375 13.191406 6.121094 12.929688 6.445312 12.929688 Z M 18.636719 4.726562 L 16.628906 11.757812 L 6.914062 11.757812 L 5.351562 4.726562 Z M 18.636719 4.726562 " />
-                <path fill="#ffffff"
-                  d="M 5.859375 17.03125 C 5.859375 18 6.648438 18.789062 7.617188 18.789062 C 8.585938 18.789062 9.375 18 9.375 17.03125 C 9.375 16.0625 8.585938 15.273438 7.617188 15.273438 C 6.648438 15.273438 5.859375 16.0625 5.859375 17.03125 Z M 7.617188 16.445312 C 7.941406 16.445312 8.203125 16.707031 8.203125 17.03125 C 8.203125 17.355469 7.941406 17.617188 7.617188 17.617188 C 7.292969 17.617188 7.03125 17.355469 7.03125 17.03125 C 7.03125 16.707031 7.292969 16.445312 7.617188 16.445312 Z M 7.617188 16.445312 " />
-                <path fill="#ffffff"
-                  d="M 14.140625 17.03125 C 14.140625 18 14.929688 18.789062 15.898438 18.789062 C 16.867188 18.789062 17.65625 18 17.65625 17.03125 C 17.65625 16.0625 16.867188 15.273438 15.898438 15.273438 C 14.929688 15.273438 14.140625 16.0625 14.140625 17.03125 Z M 15.898438 16.445312 C 16.222656 16.445312 16.484375 16.707031 16.484375 17.03125 C 16.484375 17.355469 16.222656 17.617188 15.898438 17.617188 C 15.574219 17.617188 15.3125 17.355469 15.3125 17.03125 C 15.3125 16.707031 15.574219 16.445312 15.898438 16.445312 Z M 15.898438 16.445312 " />
-              </g>
-            </svg>
-            <span class="header__cart-num">1</span>
-          </a>
         </div>
       </div>
     </div>
@@ -109,130 +92,108 @@
 
   <main class="main">
 
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about__wrapper">
-          <div class="about__box-img">
-            <img class="about__bg" src="images/about-bg.jpg" alt="фото шкарпетки">
+ </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="delete__cookies disable">
+        <p><strong></strong><br /><span class="cookieValue"></span></p>
+        <button id="clear" class="clear"></button>
+      </div>
+      <div class="footer__wrapper">
+        <div class="footer__contacts">
+          <h3 class="footer__title footer__title--fade">kontakt</h3>
+          <div class="footer__first-box">
+            <h4 class="footer__contacs-title">schlegel ag</h4>
+            <address class="footer__address">
+              <span>Blumenfeldstrasse 14</span>
+              <span>CH-9403 Goldach</span>
+            </address>
+            <a class="footer__link-tel" href="tel:+41718442626">
+              Tel: +41 71 844 26 26
+            </a>
           </div>
-          <div class="about__info">
-            <h1 class="about__title">Rollo Wolf</h1>
-            <p class="about__subtitle">
-              Це сімейна справа з мрією створювати якісні та красиві шкарпетки в Україні.
-            </p>
-            <div class="about__text">
-              <p>
-                Всю панчішно-шкарпеткову продукцію, яка сьогодні найбільш широко представлена ​​на ринку, можна умовно
-                поділити на три основні категорії якості. Високоякісні вироби завозяться переважно з Європи – частка
-                імпорту у зазначеному сегменті перевищує 90%, але попит на такі шкарпетки порівняно невисокий.
-              </p>
-              <p>
-                Найбільш дешева і низькоякісна продукція – найпоширеніша. На імпорт в бюджетному сегменті припадає
-                близько 50-60%. Основними імпортерами є країни Азії – це Китай, Індія, В’єтнам та Індонезія. Попит на
-                таку продукцію дуже високий, але рентабельність виробництва з виготовлення шкарпеток мінімальна.
-                Серйозний дохід тут можна отримати лише при великому обсязі виробництва.
-              </p>
-              <p>
-                Імпорт продукції середньої якості набагато нижчий. На закордонне виробництво припадає не більше 35%.
-                Основні постачальники – країни Східної Європи та Туреччина. Саме цей сегмент є оптимальним для створення
-                невеликого приватного виробництва.
-              </p>
-              <p>
-                В порівнянні чоловічі шкарпетк користуються набагато більш високим попитом, ніж жіночі. Особливим
-                попитом
-                користуються однотонні бавовняні шкарпетки.
-              </p>
-            </div>
+          <div class="footer__second-box">
+            <h4 class="footer__contacs-title"><span>schlegel</span> sp. z. o. o.</h4>
+            <address class="footer__address">
+              <span>ul. Tarnobrzeska 14</span>
+              <span>lok. 9</span>
+              <span>PL-26-600 Radom</span>
+            </address>
+            <a class="footer__link-tel" href="tel:+48483898090">
+              Tel: +48 48389 80 90
+            </a>
+          </div>
+        </div>
+        <div class="footer__about">
+          <h3 class="footer__title">schlegelgruppe</h3>
+          <p class="footer__descr">
+            <a href="https://u-connect.pro/test/about.html">Wir über uns</a>
+            <a href="https://u-connect.pro/test/protection.html">Impressum & Datenschutz</a>
+            <a href="https://u-connect.pro/test/documents.html">AGB</a>
+            <a class="footet__link" href="https://gastrofrit.ch/de/">Zur<span>GASTROFRIT AG</span></a>
+          </p>
+        </div>
+        <div class="footer__social">
+          <h3 class="footer__title">social media</h3>
+          <div class="footer__social__box">
+            <a class="footer__social-link" href="https://www.facebook.com/schlegel.ag/">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.6119 1.25C17.792 1.25 18.75 2.20806 18.75 3.38808V16.6119C18.75 17.7919 17.7919 18.75 16.6119 18.75H12.9729V12.1562H15.2492L15.6824 9.33227H12.9729V7.49965C12.9729 6.72709 13.3514 5.97401 14.565 5.97401H15.7969V3.56981C15.7969 3.56981 14.6789 3.37902 13.61 3.37902C11.3785 3.37902 9.91995 4.73147 9.91995 7.17994V9.33227H7.43943V12.1562H9.91995V18.75H3.38808C2.20806 18.75 1.25 17.7919 1.25 16.6119V3.38808C1.25 2.20806 2.20802 1.25 3.38808 1.25H16.6119V1.25Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a class="footer__social-link" href="https://www.linkedin.com/company/schlegel-ag/?originalSubdomain=ch">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.2869 1.25H3.71314C3.05987 1.25 2.43336 1.50951 1.97143 1.97143C1.50951 2.43337 1.25 3.05987 1.25 3.71313V16.2869C1.25 16.9402 1.50951 17.5667 1.97143 18.0286C2.43336 18.4905 3.05987 18.7501 3.71314 18.7501H16.2869C16.9402 18.7501 17.5667 18.4905 18.0286 18.0286C18.4906 17.5667 18.75 16.9402 18.75 16.2869V3.71313C18.75 3.05987 18.4906 2.43337 18.0286 1.97143C17.5667 1.50951 16.9402 1.25 16.2869 1.25ZM7.08408 15.2325C7.08408 15.2763 7.05455 15.3419 6.99658 15.4305C6.90908 15.4896 6.84236 15.518 6.79861 15.518H4.77517C4.73142 15.518 4.66579 15.4896 4.57829 15.4305C4.51923 15.343 4.4897 15.2774 4.4897 15.2325V8.12971C4.4897 8.08596 4.51923 8.02033 4.5772 7.93283C4.6647 7.87377 4.73033 7.84424 4.77517 7.84424H6.79861C6.84236 7.84424 6.90799 7.87377 6.99549 7.93174C7.05455 8.01924 7.08408 8.08486 7.08408 8.12971V15.2325ZM6.75486 6.63455C6.6291 6.76315 6.47834 6.86463 6.31186 6.93272C6.14538 7.00082 5.96671 7.03409 5.78689 7.03048C5.40517 7.03048 5.08361 6.89923 4.81892 6.63455C4.69026 6.50883 4.58874 6.35808 4.52064 6.19159C4.45255 6.0251 4.41931 5.84641 4.42298 5.66657C4.42298 5.30017 4.55533 4.98517 4.81892 4.72157C4.94326 4.58961 5.09327 4.48447 5.25972 4.41261C5.42618 4.34075 5.60558 4.30367 5.78689 4.30367C5.96819 4.30367 6.14759 4.34075 6.31405 4.41261C6.48051 4.48447 6.63051 4.58961 6.75486 4.72157C7.01736 4.98407 7.14971 5.30126 7.14971 5.66657C7.14971 6.04829 7.01846 6.37095 6.75486 6.63455ZM15.682 15.2325C15.6817 15.2697 15.6738 15.3065 15.6587 15.3405C15.6437 15.3746 15.6219 15.4052 15.5945 15.4305C15.5693 15.4577 15.5386 15.4796 15.5046 15.4947C15.4706 15.5097 15.4339 15.5177 15.3966 15.518H13.3294C13.2856 15.518 13.22 15.4896 13.1325 15.4305C13.0734 15.343 13.0439 15.2774 13.0439 15.2325V10.9013C13.0439 10.5338 12.9783 10.2483 12.8459 10.0427C12.6841 9.86768 12.4205 9.78018 12.054 9.78018C11.5849 9.78018 11.248 9.91799 11.0424 10.1969C10.8521 10.4758 10.7569 10.8717 10.7569 11.3847V15.2325C10.7566 15.2697 10.7486 15.3065 10.7336 15.3405C10.7185 15.3746 10.6967 15.4052 10.6694 15.4305C10.644 15.458 10.6132 15.4798 10.5789 15.4949C10.5447 15.5099 10.5077 15.5178 10.4703 15.518H8.4469C8.40315 15.518 8.33751 15.4896 8.25001 15.4305C8.19096 15.343 8.16252 15.2774 8.16252 15.2325V8.12971C8.16252 8.08596 8.19096 8.02033 8.25001 7.93283C8.33751 7.87377 8.40315 7.84424 8.4469 7.84424H10.4047C10.4638 7.84424 10.5217 7.85845 10.5797 7.88799C10.6103 7.9033 10.6399 7.95361 10.6683 8.04111V8.15158L10.6902 8.19533V8.37142C11.1747 7.9033 11.8419 7.66814 12.6917 7.66814C13.6444 7.66814 14.3772 7.89564 14.8901 8.34955C15.4184 8.83299 15.682 9.5308 15.682 10.4386V15.2325Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a class="footer__social-link" href="https://twitter.com/birchi_schlegel">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.5554 18.75H3.43669C3.14718 18.7596 2.85883 18.709 2.58988 18.6014C2.32093 18.4939 2.07723 18.3316 1.87419 18.125C1.66917 17.9234 1.50786 17.6818 1.40033 17.4151C1.2928 17.1484 1.24135 16.8625 1.24919 16.575V3.43755C1.23962 3.14804 1.29022 2.85969 1.3978 2.59074C1.50538 2.32179 1.6676 2.07809 1.87419 1.87505C2.07723 1.66845 2.32093 1.50623 2.58988 1.39865C2.85883 1.29107 3.14718 1.24047 3.43669 1.25005H16.5617C16.8512 1.24047 17.1395 1.29107 17.4085 1.39865C17.6774 1.50623 17.9211 1.66845 18.1242 1.87505C18.3308 2.07809 18.493 2.32179 18.6006 2.59074C18.7082 2.85969 18.7588 3.14804 18.7492 3.43755V16.5625C18.7459 17.1428 18.5135 17.6982 18.1026 18.1079C17.6918 18.5176 17.1357 18.7484 16.5554 18.75V18.75ZM7.89919 14.6188C9.47778 14.6315 11.0075 14.072 12.2054 13.0438C13.0776 12.2692 13.7398 11.2867 14.1304 10.1875C14.3746 9.51157 14.5055 8.79992 14.5179 8.0813V7.6813C14.7421 7.51219 14.9512 7.32399 15.1429 7.1188C15.3319 6.92434 15.5054 6.71537 15.6617 6.4938V6.4938C15.2528 6.6895 14.8128 6.81218 14.3617 6.8563V6.8563C14.5383 6.75078 14.7019 6.62492 14.8492 6.4813C15.0723 6.21659 15.2459 5.91383 15.3617 5.58755C15.0628 5.77177 14.7414 5.91671 14.4054 6.0188C14.2323 6.07715 14.0546 6.12105 13.8742 6.15005C13.4289 5.69591 12.8226 5.43544 12.1867 5.42505C11.575 5.42185 10.9866 5.65989 10.5492 6.08755C10.3225 6.30178 10.1427 6.56068 10.0212 6.84791C9.89962 7.13513 9.83893 7.44443 9.84294 7.7563C9.84472 7.9351 9.86567 8.11321 9.90544 8.28755C9.56351 8.26794 9.22322 8.22618 8.88669 8.16255C8.09492 7.97063 7.33791 7.65644 6.64294 7.2313C6.05984 6.83636 5.53944 6.35599 5.09919 5.8063C4.86983 6.2253 4.77107 6.70335 4.81563 7.17894C4.86018 7.65454 5.046 8.10593 5.34919 8.47505C5.47456 8.6412 5.62917 8.7831 5.80544 8.8938V8.8938C5.44455 8.88118 5.09152 8.7849 4.77419 8.61255C4.7732 8.9286 4.83514 9.24168 4.9564 9.53355C5.07765 9.82542 5.25579 10.0902 5.48044 10.3125C5.7138 10.5336 5.99046 10.7038 6.29294 10.8125C6.39733 10.859 6.50624 10.8946 6.61794 10.9188C6.53439 10.9537 6.44574 10.9748 6.35544 10.9813H5.99919C5.86108 10.982 5.72313 10.9715 5.58669 10.95C5.75137 11.4647 6.08929 11.9064 6.54294 12.2C6.90554 12.4313 7.32543 12.5568 7.75544 12.5625C7.55067 12.732 7.33103 12.8826 7.09919 13.0125C6.43866 13.3641 5.70365 13.5527 4.95544 13.5625C4.74725 13.5736 4.53863 13.5736 4.33044 13.5625C5.39133 14.2556 6.63198 14.6228 7.89919 14.6188V14.6188Z"
+                  fill="white" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__wrapper">
-        <div class="footer__inner">
-          <ul class="footer__list">
-            <li class="footer__item">
-              Графік роботи:
-            </li>
-            <li class="footer__item">
-              ПН-ПТ: с 9:00 до 18:00
-            </li>
-            <li class="footer__item">
-              СБ: с 11:00 до 16:00
-            </li>
-            <li class="footer__item">
-              НД: вихідний
-            </li>
-          </ul>
-          <ul class="footer__list">
-            <li class="footer__item">
-              ЦУМ -1 этаж (Киев)
-            </li>
-            <li class="footer__item">
-              Menshoes (Киев)
-            </li>
-            <li class="footer__item">
-              Шедевра (Сумы)
-            </li>
-            <li class="footer__item">
-              Chekroom (Черкассы)
-            </li>
-            <li class="footer__item">
-              UFS (Днепр)
-            </li>
-          </ul>
-        </div>
-        <div class="social social--footer">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link icon icon--bg" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
-                  height="20px" viewBox="0 0 20 20" version="1.1">
-                  <g id="surface1">
-                    <path fill="#3c6b97"
-                      d="M 14.191406 0 L 5.808594 0 C 2.605469 0 0 2.605469 0 5.808594 L 0 14.191406 C 0 17.394531 2.605469 20 5.808594 20 L 14.191406 20 C 17.394531 20 20 17.394531 20 14.191406 L 20 5.808594 C 20 2.605469 17.394531 0 14.191406 0 Z M 18.4375 14.191406 C 18.4375 16.53125 16.53125 18.4375 14.191406 18.4375 L 5.808594 18.4375 C 3.46875 18.4375 1.5625 16.53125 1.5625 14.191406 L 1.5625 5.808594 C 1.5625 3.46875 3.46875 1.5625 5.808594 1.5625 L 14.191406 1.5625 C 16.53125 1.5625 18.4375 3.46875 18.4375 5.808594 Z M 18.4375 14.191406 " />
-                    <path fill="#3c6b97"
-                      d="M 10 4.609375 C 7.027344 4.609375 4.609375 7.027344 4.609375 10 C 4.609375 12.972656 7.027344 15.390625 10 15.390625 C 12.972656 15.390625 15.390625 12.972656 15.390625 10 C 15.390625 7.027344 12.972656 4.609375 10 4.609375 Z M 10 13.828125 C 7.890625 13.828125 6.171875 12.109375 6.171875 10 C 6.171875 7.890625 7.890625 6.171875 10 6.171875 C 12.109375 6.171875 13.828125 7.890625 13.828125 10 C 13.828125 12.109375 12.109375 13.828125 10 13.828125 Z M 10 13.828125 " />
-                    <path fill="#3c6b97"
-                      d="M 16.25 4.53125 C 16.25 4.960938 15.898438 5.3125 15.46875 5.3125 C 15.039062 5.3125 14.6875 4.960938 14.6875 4.53125 C 14.6875 4.101562 15.039062 3.75 15.46875 3.75 C 15.898438 3.75 16.25 4.101562 16.25 4.53125 Z M 16.25 4.53125 " />
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link icon icon--bg" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px"
-                  height="40px" viewBox="0 0 20 20">
-                  <g id="surface1">
-                    <path fill="#3c6b97"
-                      d="M 15.234375 8.070312 C 15.234375 7.230469 14.554688 6.550781 13.714844 6.550781 L 6.597656 6.550781 C 5.761719 6.550781 5.082031 7.230469 5.082031 8.070312 L 5.082031 12.140625 C 5.082031 12.980469 5.761719 13.65625 6.597656 13.65625 L 13.714844 13.65625 C 14.554688 13.65625 15.234375 12.976562 15.234375 12.140625 Z M 9.140625 11.820312 L 9.140625 8 L 12.042969 9.910156 Z M 9.140625 11.820312 " />
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link icon icon--bg" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
-                  height="20px" viewBox="0 0 20 20">
-                  <g>
-                    <path fill="#3c6b97"
-                      d="M 11.550781 20 L 11.550781 10.878906 L 14.609375 10.878906 L 15.070312 7.320312 L 11.550781 7.320312 L 11.550781 5.050781 C 11.550781 4.023438 11.832031 3.320312 13.3125 3.320312 L 15.191406 3.320312 L 15.191406 0.140625 C 14.867188 0.0976562 13.75 0 12.449219 0 C 9.734375 0 7.878906 1.65625 7.878906 4.699219 L 7.878906 7.320312 L 4.808594 7.320312 L 4.808594 10.878906 L 7.878906 10.878906 L 7.878906 20 Z M 11.550781 20 " />
-                  </g>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="social__inner">
-            <a class="social__link-tel" href="tel:+380955555555">
-              +38(095)-555-55-55
-            </a>
-            <a class="social__link-tel" href="tel:+380969666666">
-              +38(096)-966-66-66
-            </a>
+      <div class="footer__copy">
+        <p class="footer__copy-text">©<span>2021</span> schlegel ag</p>
+        <a class="logo-white" href="/">
+          <img class="logo-white__img" src="images/logos/SCHLEGEL_GRUPPE_white.svg" alt="logo white">
+        </a>
+      </div>
+      <div id="cookie-notice">
+        <div class="cookie-notice__inner">
+          <div class="cookie-notice__title">
+            Diese Webseite verwendet Cookies
+          </div>
+          <div class="cookie-notice__flex">
+            <p class="cookie-notice__text cookie-notice__desktop">
+              Sehr geehrter Besucher,<br>
+              diese Webseite verwendet neben technisch notwendigen Cookies auch solche, deren Zweck die Analyse von
+              Webseitenzugriffen oder die Personalisierung Ihrer Nutzererfahrung ist. Nähere Informationen dazu finden
+              Sie
+              in unserer Datenschutzerklärung und in unserem Cookiehinweis. Sie finden diese in der Fußleiste unserer
+              Webseite. Im Cookiehinweis können Sie auch jederzeit Ihre Einwilligung in die Verwendung einsehen und
+              diese
+              ändern oder mit nur einem Klick widerrufen. Der Schutz Ihrer Daten ist uns als Anbieter von kostenlosen
+              Informationen aus dem Bereich Datenschutz ein wichtiges Anliegen. Wir würden uns freuen, wenn Sie durch
+              Ihre
+              bewusste Einwilligung zur Verarbeitung der ausschließlich pseudonym erhobenen Daten helfen würden, unser
+              Angebot für Sie und andere Datenschutzinteressierte zu verbessern.
+            </p>
+            <p class="cookie-notice__text cookie-notice__mobile">
+              Diese Website nutzt Cookies für die Analyse anonymisierter Nutzerdaten,
+              um die Qualität unserer Website und deren Inhalte zu verbessern.
+            </p>
+            <div class="cookie-notice__box">
+              <button id='cookie-nope' class="large good">Akzeptieren</button>
+              <button id='cookie-yep' class="large bad">Ablehnen</button>
+            </div>
           </div>
         </div>
       </div>

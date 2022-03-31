@@ -1,29 +1,62 @@
 @font-face {
-  font-family: 'avenirnextcyr';
-  font-weight: 700;
+  font-family: 'OpenSans';
+  src: url('../fonts/Opensans/OpenSans-Light.woff2') format('woff2'),
+    url('../fonts/Opensans/OpenSans-Light.woff') format('woff');
+  font-weight: 300;
   font-style: normal;
-  src:
-    url('../fonts/avenirnextcyr-bold.woff2'),
-    url('../fonts/avenirnextcyr-bold.woff');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'avenirnextcyr';
-  font-weight: 500;
-  font-style: normal;
-  src:
-    url('../fonts/avenirnextcyr-medium.woff2'),
-    url('../fonts/avenirnextcyr-medium.woff');
+  font-family: 'OpenSans';
+  src: url('../fonts/Opensans/OpenSans-LightItalic.woff2') format('woff2'),
+    url('../fonts/Opensans/OpenSans-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'avenirnextcyr';
+  font-family: 'OpenSans';
+  src: url('../fonts/Opensans/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/Opensans/OpenSans-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
-  src:
-    url('../fonts/avenirnextcyr-regular.woff2'),
-    url('../fonts/avenirnextcyr-regular.woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/Opensans/OpenSans-SemiBold.woff2') format('woff2'),
+    url('../fonts/Opensans/OpenSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('../fonts/josefin/JosefinSans-Light.woff2') format('woff2'),
+    url('../fonts/josefin/JosefinSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('../fonts/josefin/JosefinSans-Regular.woff2') format('woff2'),
+    url('../fonts/josefin/JosefinSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/helvetica/Helvetica Neue-Light.woff2') format('woff2'),
+    url('../fonts/helvetica/Helvetica Neue-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
   font-display: swap;
 }

@@ -1,0 +1,43 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  max-width: 384px;
+  height: 28px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__direction {
+    position: relative;
+    transform: translateY(25%);
+
+    &--prev {
+      margin-right: 50px;
+
+    }
+
+    &--next {
+      margin-left: 50px;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 26px;
+  }
+
+  &__link {
+    color: #0B2D49;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+
+    &--active {
+      border-bottom: 1px solid #045394;
+      color: #045394;
+      padding-bottom: 5px;
+
+    }
+  }
+}
